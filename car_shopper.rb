@@ -18,15 +18,22 @@ def car_shopper
   end
 =end
 
-car_listings.each do |each_car|
-  car = {
+cars = car_listings.map do |each_car|
+   {
       make: each_car.css('.make').text, 
       year: each_car.css('.year').text,
       price: each_car.css('.price').text,
       rating: each_car.css('.star.rating').attribute("data-rating").value 
-  }
-  pp car 
+    }
 end
+
+  #pp cars.to_json 
+
+  File.open("car_listings.json", "wb") do |f|
+    f << cars.to_json 
+  end
+
+
   #puts 'Welcome to the shopper!'
 
   #puts parsed_html
