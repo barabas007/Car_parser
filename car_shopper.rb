@@ -33,6 +33,12 @@ cars = car_listings.map do |each_car|
     }
 end
 
+cars.select! do |car|
+  (car[:price] < 30_000) && (car[:year] > 2014) && (car[:rating] > 3)
+end
+
+
+
   #pp cars.to_json 
 
   File.open("car_listings.json", "wb") do |f|
