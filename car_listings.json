@@ -6,27 +6,9 @@
     "rating": 4
   },
   {
-    "make": "Mid-Size Sedan",
-    "year": 2018,
-    "price": 27599,
-    "rating": 3
-  },
-  {
-    "make": "Family Wagon",
-    "year": 2014,
-    "price": 22300,
-    "rating": 5
-  },
-  {
     "make": "Starter Coupe",
     "year": 2018,
     "price": 21459,
     "rating": 4
-  },
-  {
-    "make": "Comfort Cruiser",
-    "year": 2016,
-    "price": 26750,
-    "rating": 3
   }
 ]
