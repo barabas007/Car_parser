@@ -15,6 +15,7 @@ def car_shopper
   car_listings = parsed_html.css('.card.car')
 
   #pp car_listings.first
+  
 =begin
   car_listings.each do |each_car|
     pp each_car.css('.make').text 
@@ -52,3 +53,6 @@ end
 end
 
 car_shopper
+
+
+#
